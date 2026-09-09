@@ -64,6 +64,7 @@ If invalid, explain why in the reason field.`,
 
 /**
  * Sends the generated deck to the checker agent before we save it.
+ * In this guardrail , we are using one more agent to validate the output of the first agent.
  * If quality fails, the whole run is blocked.
  */
 export const pitchDeckQualityGuardrail: OutputGuardrail = {
