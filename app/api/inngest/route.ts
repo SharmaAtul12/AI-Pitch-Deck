@@ -1,6 +1,6 @@
 import { serve } from "inngest/next";
 import { inngest } from "../../../inngest/client";
-import { generateDeck } from "@/inngest/functions/generate-deck";
+import { generateDeck } from "@/inngest/functions";
 
 export const { GET, POST, PUT } = serve({
   client: inngest,
